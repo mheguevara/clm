@@ -1,0 +1,15 @@
+# search through command history
+
+ctrl r pattern
+
+# get previous command
+
+!!
+
+# get previous command with pattern
+
+!pattern
+
+# edit previous command and rerun it
+
+^pattern1^pattern2^

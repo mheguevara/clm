@@ -1,0 +1,12 @@
+# cd to home directory
+
+cd
+cd ~
+
+# cd into parent directory
+
+cd ..
+
+# cd into the previous directory
+
+cd -
