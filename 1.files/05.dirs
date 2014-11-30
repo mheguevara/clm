@@ -1,0 +1,9 @@
+=== Directories ===
+
+* make a dir
+
+<pre>mkdir dir</pre>
+
+* make a directory, make parents if they dont exists
+
+<pre>mkdir -p com/monitise/project</pre>

@@ -1,0 +1,25 @@
+=== Listing ===
+
+* list files in current directory
+
+<pre>ls</pre>
+
+* list all files
+
+<pre>ls -a</pre>
+
+* list all files with related informations in columns
+
+<pre>ls -al</pre>
+
+* list all files with their sizes are human readable format
+
+<pre> ls -alh</pre>
+
+* list all files sorted according to their sizes
+
+<pre> ls -alhS</pre>
+
+* list all files sorted according to last modified dates
+
+<pre> ls -alht</pre>

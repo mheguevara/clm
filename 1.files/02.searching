@@ -1,0 +1,21 @@
+=== Search files ===
+
+* search word Word in file
+
+<pre>grep word file</pre>
+
+* search word Word in file and print line numbers
+
+<pre>grep -n word file</pre>
+
+* search word Word in file and print only the names of files with a match
+
+<pre>grep -l word file</pre>
+
+* search word Word in file and print only the names of files without a match
+
+<pre>grep -L word file</pre>
+
+* search regular expression in a file
+
+<pre>grep -e '.*' file</pre>

@@ -1,0 +1,147 @@
+#!/usr/bin/bash
+
+# prints file1
+cat file1
+
+# prints file1 followed by file2
+cat file1 file2
+
+# prints last 10 lines file1
+tail file1
+
+# prints last 20 lines file1
+tail -n20 bigfile
+
+# prints last 10 lines file1
+tail -n10 bigfile
+
+# prints last 20 bytes file1
+tail -c20 bigfile
+
+./generatelines
+
+# prints last 10 lines of bigfile and follow
+tail -f bigfile
+
+# prints last 10 lines of bigfile and follow, if file renamed do not stop
+tail -F bigfile
+
+# print first 10 lines of bigfile
+head bigfile
+
+# print first 10 lines of bigfile
+head -n 20 bigfile
+
+# print first 20 bytes of bigfile
+head -c 20 bigfile
+
+# search public
+grep public String.java
+
+# search constructors
+grep 'public String(' String.java
+
+# search constructors print match count
+grep -c 'public String(' String.java
+
+# search constructors print line numbers
+grep -n 'public String(' String.java
+
+# search constructors list matching files
+grep -l 'java.util' String.java List.java
+
+grep -l 'java.lang' String.java List.java
+
+# search constructors list nonmatching files
+grep -L 'java.lang' String.java List.java
+
+# search int returned methods in string and list java source code
+grep -e '\(public \)\?int \w\+(.*)\( {\|;\)' String.java List.java
+
+# list files
+ls
+
+# list all files
+
+ls -a
+
+# list files with info
+
+ls -al
+
+# list files with human readable sizes
+
+ls -alh
+
+# list files sorted according to their sizes
+
+ls -alhS
+
+# list files sorted according to dates
+
+ls -alht
+
+# count bytes, words and lines respectively
+
+wc -c bigfile
+wc -w bigfile
+wc -l bigfile
+wc bigfile
+
+# make directory
+
+mkdir dir
+
+# make directory, make parents if they dont exists
+
+mkdir -p com/monitise/sessions
+
+# move a file to a dir
+mv file1 dir
+
+# rename file
+mv file1 file11
+
+# copy file to dir
+cp file2 dir
+
+# copy file
+cp file2 file22
+
+# sort contents
+
+sort letters
+
+# sort numberts
+
+sort -n digits
+
+# sort in reverse
+
+sort -r digits
+
+# sort according to keys
+
+sort -t , member.csv
+
+# eliminiate duplicates in sorted file
+uniq duplicates
+
+# find files
+find . -type f
+
+# find dirs
+
+find . -type d
+
+# find empty files
+
+find . -type f -empty
+
+# find java source codes
+
+find /Users/alaym/development/projects/Bilyoner/TrxLogConsumer/ -type f -name '*.java'
+
+# find dirs/files belongs to pozitron
+
+find . -user pozitron

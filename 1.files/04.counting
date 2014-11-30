@@ -1,0 +1,11 @@
+=== Counting ===
+
+* count lines, words and bytes
+
+<pre>wc file</pre>
+
+* count only bytes, words and lines respectively
+
+<pre>wc -c file</pre>
+<pre>wc -w file</pre>
+<pre>wc -l file</pre>

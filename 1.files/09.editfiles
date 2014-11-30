@@ -1,0 +1,12 @@
+=== Editing files ===
+
+* find and replace parts
+<pre>sed 's/pattern1/pattern2/g' file</pre>
+
+* delete lines matches a pettern
+
+<pre>sed '/pattern/d' file</pre>
+
+* delete lines between patterns
+
+<pre>sed '/pattern/,/pattern2/d' file</pre>

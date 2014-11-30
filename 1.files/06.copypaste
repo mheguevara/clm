@@ -1,0 +1,17 @@
+=== Copy paste ===
+
+* move file to a dir
+
+<pre>mv file dir</pre>
+
+* rename file to file2
+
+<pre>mv file file2</pre>
+
+* copy file to dir
+
+<pre>cp file dir</pre>
+
+* make a copy of a file
+
+<pre>cp file file2</pre>

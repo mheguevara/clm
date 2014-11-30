@@ -1,0 +1,19 @@
+=== Sorting ===
+
+* sort contents of file alphabetically
+<pre> sort letter</pre>
+
+* sort contents numerically 
+<pre> sort -n digits</pre>
+
+* sort in reverse
+
+<pre> sort -r digits</pre>
+
+* sort via keys
+
+<pre> sort -t , members.csv</pre>
+
+* eliminate duplicates in sorted file
+
+<pre> uniq duplicates </pre>

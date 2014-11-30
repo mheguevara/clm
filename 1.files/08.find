@@ -1,0 +1,21 @@
+=== Find files ===
+
+* find files 
+
+<pre>find . -type f</pre>
+
+* find directories
+
+<pre>find . -type d</pre>
+
+* find files ending with java
+
+<pre>find . -type f -name '*.java'</pre>
+
+* find empty files or directories
+
+<pre>find . -empty</pre>
+
+* find files belongs to user
+
+<pre>find . -type f -user pozitron</pre>

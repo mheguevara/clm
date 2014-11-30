@@ -1,0 +1,41 @@
+=== Inspects contents of files ===
+
+* prints contents of a file named file1
+
+<pre>cat file1</pre>
+
+* prints content of multiple files together
+
+<pre>cat file1 file2 file3</pre>
+
+* prints end of a file
+
+<pre>tail file1</pre>
+
+* prints end of a file with preceding 10 lines, default location is last 10 lines
+
+<pre>tail -n20 bigfile</pre>
+
+* prints last 20 bytes
+
+<pre>tail -c 20</pre>
+
+* prints end of a file continuously
+
+<pre>tail -f file </pre>
+
+* prints end of a file continuously and follow new file if file gets renamed
+
+<pre>tail -F file </pre>
+
+* prints beginning of a file, default location is first 10 lines
+
+<pre>head file</pre>
+
+* prints first 20 lines
+
+<pre>head -n 20 file</pre>
+
+* prints first 20 bytes
+
+<pre>head -c 20 file</pre>

@@ -1,0 +1,41 @@
+=== File Descriptors ===
+
+stdin, stdout and stderr
+
+* redirect stdout to a file named out
+
+<pre>ls >out</pre>
+
+* redirect both stdout and stderr to a file named out
+
+<pre>ls >out 2>&1</pre>
+
+or
+
+<pre>ls &>out</pre>
+
+* silence a command
+
+<pre>ls /dev/null</pre>
+
+Use case, cat:
+
+* read from stdin and prints to std out
+
+<pre>cat</pre>
+
+* prints contents of a file to stdout
+
+<pre>cat file1</pre>
+
+* read contents of a file and prints them to stdout
+
+<pre>cat < file1</pre>
+
+* read contents of a file and writes them to a file named file2
+
+<pre>cat < file1 > files</pre>
+
+* read contents of a file file1, then stdin, then file2, then stdin and write them to file3
+
+<pre>cat file1 - file2 - > file3</pre>

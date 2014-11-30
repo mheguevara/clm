@@ -1,0 +1,13 @@
+=== Process files with awk ===
+
+* print "hi" with every line that matches pattern
+
+<pre>awk '{print "hi"}' file</pre>
+
+* print first word in every line 
+
+<pre>awk '{print $1}' file
+
+* count matching lines
+
+<pre>awk 'BEGIN{count = 0}; /pattern{count += 1}; END {print count}' file</pre>
