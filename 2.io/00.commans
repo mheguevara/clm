@@ -1,0 +1,37 @@
+# print everything
+
+./sample.py
+
+# direct stdout into file
+
+./sample.py > out
+
+# direct everything into file
+
+./sample.py > out 2>&1
+./sample.py &> out
+
+# silence command
+
+./sample.py &> /dev/null
+
+# read from stdin, print out stdout
+
+cat 
+
+# read from stdin print into out
+
+cat > out
+
+# read from file, direct into another file
+
+cat < file1 > file2
+
+# print script urls from pozitron website
+
+cat pozitron.com | grep '<script.*src' | grep -o 'src=".*"' | sed -e 's/src="//g' -e 's/"$//g'
+
+# count divs in pozitron website
+
+cat pozitron.com | grep -c '<div'
+
