@@ -145,3 +145,23 @@ find /Users/alaym/development/projects/Bilyoner/TrxLogConsumer/ -type f -name '*
 # find dirs/files belongs to pozitron
 
 find . -user pozitron
+
+# search and replace
+
+sed 's/ age=".*"//g' schema.xml
+
+# delete lines with li
+
+sed '/name=".*li"/d' schema.xml
+
+# delete lines ending with >
+
+sed '/$>/d' schema.xml
+
+# print first word of every line
+
+awk '{print $1}' schema.xml
+
+# count lines with age in it
+
+awk 'BEGIN{count = 0}; END {print count}; /age/{count += 1}' schema.xml
