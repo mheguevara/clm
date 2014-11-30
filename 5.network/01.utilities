@@ -1,0 +1,32 @@
+=== network utilities ===
+
+* ping a host
+
+<pre>ping www.pozitron.com</pre>
+
+* make a ssh connection to a host
+
+<pre>ssh pozitron@courbet.sandbox.pozitron.com</pre>
+
+* run a command remotely on a host
+
+<pre>ssh pozitron@courbet.sandbox.pozitron.com "command location"</pre>
+
+* using secure copy recursively upload a directory to a server
+
+<pre>scp -r dir pozitron@courbet.sandbox.pozitron.com:</pre>
+
+* to see open tcp connections in linux
+
+<pre>netstat -tpn</pre>
+
+* to see listenin tcp connections in linux
+
+<pre>netstat -tlpn</pre>
+
+* to see open tcp connections in mac
+
+<pre>lsof -i tcp</pre>
+or
+<pre>netstat -p tcp</pre>
+

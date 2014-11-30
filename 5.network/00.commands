@@ -1,0 +1,71 @@
+# ping a host
+
+ping www.pozitron.com
+
+# ssh to a host
+
+ssh pozitron@courbet.sandbox.pozitron.com
+
+# run a command in a remote machine
+
+ssh pozitron@courbet.sandbox.pozitron.com "command to run"
+
+# recursively copy a directory to a remote host
+
+scp -r dir pozitron@courbet.sandbox.pozitron.com:
+
+# retrieve a file from a remote host
+
+scp pozitron@courbet.sandbox.pozitron.com:file .
+
+# connect to remote host with a selected port
+
+telnet courbet.sandbox.pozitron.com 22
+
+# check to see open tcp connnections, in linux
+
+netstat -tpn
+
+# check to see ports listening tcp connections, in linux
+
+netstat -tlpn
+
+# to see tcp connections in mac
+
+lsof -i tcp
+
+# display contents of a webpage
+
+curl www.google.com
+
+# to dump headers 
+
+curl -v www.google.com
+
+# make a post request to a web page
+
+curl -X POST --date '{}' stargate.pozitron.com
+
+# make a post request, dump headers on a file named headers.txt, dump output to a file named output.txt
+
+curl -D headers.txt -o output.txt www.google.com
+
+# make a login request, read post contents from a file, dump cookies to a file
+
+curl -X POST --data @post.txt -c cookies.txt stargate.pozitron.com/login
+
+# to use those cookies later
+
+curl -b cookies.txt stargate.pozitron.com
+
+# to use redirects
+
+curl -L  -b cookies.txt stargate.pozitron.com
+
+# to add headers
+
+curl -H 'Accept: tr' -L  -b cookies.txt stargate.pozitron.com
+
+# to download contents as a file, named after remote file
+
+curl -O <link of the remote file>

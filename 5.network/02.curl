@@ -1,0 +1,33 @@
+=== curl ===
+
+* display a webpage
+
+<pre>curl www.google.com</pre>
+
+* dumps headers also
+
+<pre>curl -v www.google.com</pre>
+
+* make a post request
+
+<pre>curl -X POST --data '{}' some.endpoint</pre>
+
+* make a post request, dump headers on a file, dump output on another file
+
+<pre>curl -D headers -o output some.endpoint</pre>
+
+* dump cookies
+
+<pre>curl -c cookies some.endpoint</pre>
+
+* use previously dumped cookies
+
+<pre>curl -b cookies some.endpoint</pre>
+
+* follow redirections
+
+<pre>curl -L www.google.com</pre>
+
+* dont display webpage instead download it with the remote into into the location directory
+
+<pre> curl -O www.google.com</pre>
