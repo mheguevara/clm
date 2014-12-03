@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# kill all process which listens on port greater than 8000
+
+# prepare
+
+printf '%s\n' "python -m SimpleHTTPServer "{7999,8000,8001,8002}" &" | bash
+
+lsof -i -P | grep LISTEN | awk '{print $2, " ", substr($9, index($9, ":") + 1, length($9) - index($9, ":"))}' > ports.tmp
+while read -r pid port _
+do
+  if [[ $port -gt 7999 ]]
+  then
+    echo "kill $pid for $port"
+    kill -9 $pid
+  fi
+done < ports.tmp
+rm ports.tmp

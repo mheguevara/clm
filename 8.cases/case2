@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# kill delete all imports for java.util.Date in bilyoner source code
+
+# solutions
+
+grep -l -r "import java.util.Date" * | while read -r file; do echo $file; sed -e '/import java.util.Date/d' -i bak $file; done
+

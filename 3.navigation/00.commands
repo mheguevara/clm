@@ -10,3 +10,27 @@ cd ..
 # cd into the previous directory
 
 cd -
+
+# go to end of the command
+
+ctrl e
+
+# go to beginining of the command
+
+ctrl a
+
+# delete a word from command
+
+ctrl w
+
+# delete the all command
+
+ctrl u
+
+# go forward one word
+
+esc f
+
+# go backward one word
+
+esc b

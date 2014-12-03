@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# forget deleted files in hg
+
+files=$(hg status | grep ! | awk '{print $2}')
+for file in $files
+do
+    echo "hg forget $file"
+    hg forget $file
+done
+
+# git way
+
+gst | grep 'deleted:' | awk '{print $2}' | while read -r file; do echo "git rm $file"; done | bash

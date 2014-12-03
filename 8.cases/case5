@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# group db connections
+
+netstat -t | grep -o -e "\(mysql\|ms-sql-s\)" | sort | uniq -c

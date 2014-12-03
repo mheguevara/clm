@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# see processes
+
+ps
+
+# see all process
+
+ps aux
+
+# see process interactively
+
+top
+
+# order processes in top, this varies from version to version and mac to ubuntu
+
+# in older versions o open fields and for example k selects cpu, q selects resident ram size enter quits
+# in newer versions f open fields, arrow moves, s sets sort field and q exists
+# in mac, in interactive mode, o<id> specifies sort order, examples ids are pid, cpu, mem, user, command, prepend with + to sort in ascending order
+
+# kill process
+
+kill pid
+
+# kill without mercy
+
+kill -9 pid
+
+# start in background
+
+ls &
+
+# screens
+
+screen -S name
+
+screen -dr name
+
+screen -x
+
+kntrl a d detach
+kntrl d terminate

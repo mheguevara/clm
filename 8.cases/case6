@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# list java system parameters
+
+ps aux | grep -e 'java .* start$' | sed 's/ /\n/g' | grep -e '-D' | sed 's/-D//g' | sort

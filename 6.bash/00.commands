@@ -1,0 +1,71 @@
+#!/bin/bash
+
+# declare a var
+
+name=muhammet
+
+# declare a var to make available to all session
+
+export surname=alay
+
+# declare a function
+
+function myecho() {
+  echo $1
+}
+
+# loops
+
+for i in $(seq 2 100)
+do
+  echo $i
+done
+
+# while loop
+
+i=0
+
+while [[ $i -lt 100 ]]
+do
+  (( i = i + 1 ))
+  echo $i
+done
+
+# string equality
+
+[[ $name == "muhammet" ]]
+echo $?
+
+# string comparison
+age=20
+[[ age < 100 ]]
+echo $?
+
+# integer comparison
+[[ age -lt 100 ]]
+echo $?
+
+[[ age -gt 100 ]]
+echo $?
+
+[[ age -eq 20 ]]
+echo $?
+
+[[ age -ne 200 ]]
+echo $?
+
+# brace expansion
+
+echo {1..2}
+echo {A..z}
+echo Digit{1..100}
+echo Digit{1..100}
+printf '%s\n' {1..3}
+
+# string operations
+
+echo ${name/m/n}
+echo ${#name}
+echo ${name:2:2}
+echo ${name:2}
+echo ${name:0:2}

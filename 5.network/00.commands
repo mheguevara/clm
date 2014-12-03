@@ -69,3 +69,43 @@ curl -H 'Accept: tr' -L  -b cookies.txt stargate.pozitron.com
 # to download contents as a file, named after remote file
 
 curl -O <link of the remote file>
+
+# download a webpage
+
+wget www.google.com
+
+# download all the images in webpage recursively
+
+wget -r -A jpg thecodinglove.com
+
+# dont create directory hierarchies
+
+wget -nd -r -A jpg http://economyofspace.tumblr.com/
+
+# span hosts, normally wget does not go to other hosts
+
+wget -H -nd -r -A jpg http://economyofspace.tumblr.com/
+
+# continuous mode, useful when downloading large files
+
+wget -c link
+
+# download urls written in a gile
+
+wget -i urls
+
+# download all the files to this directory
+
+wget -P thisdirectory/
+
+# bencmarck a server
+
+ab -n 1000 -c 100 stargate.pozitron.com
+
+# with keepalive
+
+ab -k -n 1000 -c 100 stargate.pozitron.com
+
+# with post
+
+ab -k -n 1000 -c 10 -p post -T 'application/x-www-form-urlencoded' stargate.pozitron.com/login
